@@ -511,7 +511,6 @@ def phi_structure(
     if sia is None:
         sia = _sia(subsystem, **sia_kwargs)
 
-    '''
     # Compute distinctions if not provided
     if distinctions is None:
         distinctions = compute.ces(subsystem, **ces_kwargs)
@@ -521,12 +520,11 @@ def phi_structure(
     # Compute relations if not provided
     if relations is None:
         relations = compute_relations(distinctions, **relations_kwargs)
-    '''
 
     return PhiStructure(
         sia=sia,
-        distinctions= 1, #distinctions,
-        relations= 1, #relations,
+        distinctions=distinctions,
+        relations=relations,
     )
 
 
