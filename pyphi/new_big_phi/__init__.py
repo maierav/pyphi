@@ -525,8 +525,8 @@ def phi_structure(
 
     return PhiStructure(
         sia=sia,
-        #distinctions=distinctions,
-        #relations=relations,
+        distinctions= 1#distinctions,
+        relations= 1#relations,
     )
 
 
